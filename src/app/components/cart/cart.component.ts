@@ -21,7 +21,6 @@ export class CartComponent {
     this.total = this.router.getCurrentNavigation()?.extras.state!['total'];
   }
 
-
   onDeleteCart(id: number): void {
     this.sharingDataService.idProductEventEmitter.emit(id);
   }
